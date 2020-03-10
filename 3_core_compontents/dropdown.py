@@ -34,11 +34,11 @@ def update_output(value):
     SF_img = encode_image('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/San_Francisco%2C_California._June_2017_cropped.jpg/1200px-San_Francisco%2C_California._June_2017_cropped.jpg')
     
     if value == 'NYC':
-        return html.Div(html.Img(src=NYC_img.decode()), style={'width': '500px', 'height': '400px'})
+        return html.Div(html.Img(src=NYC_img.decode(), style={'width': '500px', 'height': '400px'}))
     elif value == 'TX':
-        return html.Div(html.Img(src=TX_img.decode()), style={'width': '500px', 'height': '400px'})
+        return html.Div(html.Img(src=TX_img.decode(), style={'width': '500px', 'height': '400px'}))
     elif value == 'SF':
-        return html.Div(html.Img(src=SF_img.decode()), style={'width': '500px', 'height': '400px'})
+        return html.Div(html.Img(src=SF_img.decode(), style={'width': '500px', 'height': '400px'}))
         
 if __name__ == '__main__':
     app.run_server(debug=True)
